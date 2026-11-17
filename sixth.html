@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input/>
+    <button>add</button>
+    <script>
+        let btn=document.querySelector('button')
+        let inp=document.querySelector('input')
+        let body=document.querySelector('body')
+        btn.onclick=function(){
+            let li=document.createElement("h2")
+            li.innerText=inp.value
+            body.append(li)
+            li.addEventListener("click",()=>{
+                // li.remove()
+                li.style.color="blue"
+            })
+            
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iPhone Calculator</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+            font-family: Arial, sans-serif;
+        }
+
+        .calculator {
+            width: 320px;
+            background-color: black;
+            padding: 20px;
+            border-radius: 35px;
+        }
+
+       .display input {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 55px;
+}
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        button {
+            height: 60px;
+            width: 60px;
+            border: none;
+            border-radius: 50%;
+            background-color: #333333;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .function {
+            background-color: #A5A5A5;
+            color: black;
+        }
+
+        .operator {
+            background-color: #FF9F0A;
+            color: white;
+        }
+
+        .zero {
+            grid-column: span 2;
+            width: 130px;
+            border-radius: 40px;
+            text-align: left;
+            padding-left: 23px;
+        }
+
+        button:hover {
+            opacity: 0.75;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="calculator">
+
+        <div class="display">
+    <input type="text">
+</div>
+
+        <div class="buttons">
+
+            <button class="function">C</button>
+            <button class="function">**</button>
+            <button class="function">%</button>
+            <button class="operator">÷</button>
+
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">*</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator">-</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator">+</button>
+
+            <button class="zero">0</button>
+            <button>.</button>
+            <button class="operator">=</button>
+
+        </div>
+
+    </div>
+    <script src="./cal.js"></script>
+
+</body>
+</html>

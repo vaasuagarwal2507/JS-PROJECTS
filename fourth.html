@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1 id="one" class="two">hello</h1>
+ <h1 id="one" class="two">hello</h1>
+ <button>Click me!!</button>
+    <script>
+        // let h1=document.getElementById("one")
+        // h1.style.color='red'
+        // h1.innerText="kyu nhi ho rhi padhai"
+        // console.log(h1);
+        //  let h1=document.getElementById("three")
+        //  h1.style.color='blue'
+        //  console.log(h1);
+         
+         
+        // let h10= document.getElementsByClassName("two")
+        // console.log(h10);
+        // for(let i of h10){
+        //     i.style.color='red'
+        // }
+    //    let h1= document.querySelectorAll("one")
+    //     h1.style.color="red"
+    //     console.log(h1);
+   let btn=document.querySelector('button')
+   let body=document.querySelector('body')
+   let a=true
+   btn.onclick=function(){
+    if(a){
+        body.style.backgroundColor='red'
+        a=false
+    }
+    else{
+        body.style.backgroundColor='green'
+        a=true
+    }
+   }
+    
+        
+        
+        
+    </script>
+    
+</body>
+</html>
